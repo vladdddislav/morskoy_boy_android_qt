@@ -14,4 +14,7 @@ qt_add_executable(SeaBattle
     classes.cpp classes.h
 )
 
+set_target_properties(SeaBattle PROPERTIES
+   QT_ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+
 target_link_libraries(SeaBattle PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
